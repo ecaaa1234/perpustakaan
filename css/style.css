@@ -216,55 +216,69 @@ main {
   .review-card {
     padding: 15px;
   }
-  .login-box {
-  width: 300px;
-  padding: 40px;
-  position: relative;
-  background: var(--white);
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  top: 100px; /* Atur posisi vertikal */
-}
-
-.login-box h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: var(--primary);
-}
-
-input[type="text"],
-input[type="password"] {
+ /* Gaya untuk Login Box */
+.login-box {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  max-width: 360px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: var(--white);
   border: 1px solid #dbdbdb;
-  border-radius: 5px;
-  font-size: 14px;
-  transition: border-color 0.3s;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.04);
+  text-align: center;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
+/* Judul Login */
+.login-box h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Input Fields */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #dbdbdb;
+  border-radius: 8px;
+  background-color: #fafafa;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease;
+}
+
+.login-box input:focus {
   border-color: var(--primary);
   outline: none;
 }
 
+/* Tombol Login */
 .glow-button {
   width: 100%;
+  padding: 12px 0;
   background-color: var(--primary);
   color: var(--white);
+  font-size: 1rem;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .glow-button:hover {
   background-color: var(--secondary);
 }
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .login-box {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+}
+
 
 }
