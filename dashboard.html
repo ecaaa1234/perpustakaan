@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard | Perpustakaan</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="dark-mode">
+  <div class="dashboard">
+    <aside>
+      <h3>📘 Perpustakaan</h3>
+      <ul>
+        
+        <li onclick="showContent('daftar')">📋 Daftar Buku</li>
+        <li onclick="showContent('review')">📝 Review Buku</li>
+      </ul>
+    </aside>
+    <main>
+      <section id="daftar" class="content-section" style="display:none;">
+  <h2>📋 Daftar Buku</h2>
+  <div class="book-list">
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Laskar Pelangi" />
+      <h3>Laskar Pelangi</h3>
+      <p>Andrea Hirata</p>
+      <p class="review">“Sangat menginspirasi dan penuh harapan.”</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1529655683826-aba9b3e77383" alt="Bumi" />
+      <h3>Bumi</h3>
+      <p>Tere Liye</p>
+      <p class="review">“Penuh petualangan dan imajinasi!”</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Negeri 5 Menara" />
+      <h3>Negeri 5 Menara</h3>
+      <p>Ahmad Fuadi</p>
+      <p class="review">“Menggugah semangat meraih mimpi.”</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93" alt="Rantau 1 Muara" />
+      <h3>Rantau 1 Muara</h3>
+      <p>Ahmad Fuadi</p>
+      <p class="review">“Perjuangan dan makna keluarga yang dalam.”</p>
+    </div>
+
+    <div class="book-card">
+      <img src="https://images.unsplash.com/photo-1586480001957-7a59f34f7e6a" alt="Dilan 1990" />
+      <h3>Dilan 1990</h3>
+      <p>Pidi Baiq</p>
+      <p class="review">“Romantis, kocak, dan penuh nostalgia.”</p>
+    </div>
+  </div>
+</section>
+<section id="review" class="content-section" style="display:none;">
+  <h2>📝 Review Buku</h2>
+  <div class="review-list">
+    <div class="review-card">
+      <h3>Laskar Pelangi</h3>
+      <p><strong>Ani:</strong> Buku ini mengajarkan kita pentingnya pendidikan walau dalam keterbatasan.</p>
+      <p><strong>Dedi:</strong> Ceritanya penuh semangat dan menyentuh hati.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Bumi</h3>
+      <p><strong>Rina:</strong> Imajinatif dan sangat seru. Cocok untuk remaja!</p>
+      <p><strong>Bayu:</strong> Dunia fantasi yang unik dan alur yang menegangkan.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Negeri 5 Menara</h3>
+      <p><strong>Siti:</strong> Banyak pesan moral. Cocok untuk pelajar!</p>
+      <p><strong>Andi:</strong> Ceritanya membuat saya lebih semangat mengejar mimpi.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Rantau 1 Muara</h3>
+      <p><strong>Nina:</strong> Cerita penuh makna dan nilai keluarga yang kuat.</p>
+      <p><strong>Reza:</strong> Kisah merantau yang relate dengan kehidupan nyata.</p>
+    </div>
+
+    <div class="review-card">
+      <h3>Dilan 1990</h3>
+      <p><strong>Mila:</strong> Romantis dan lucu, Dilan bikin baper!</p>
+      <p><strong>Yusuf:</strong> Gaya bahasanya khas anak muda zaman dulu.</p>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
